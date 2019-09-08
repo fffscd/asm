@@ -326,6 +326,7 @@ configure(subprojects.findAll { it.provides }) {
   artifacts {
     archives javadocJar
     archives sourcesJar
+    archives file: file("${rootDir}/LICENSE.txt"), classifier: 'LICENSE'
   }
 
   // Add an uploadArchives task, provided by the maven plugin, to generate and
